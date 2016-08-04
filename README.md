@@ -12,6 +12,8 @@ Windows、Eclipse、PhoneGap
 
 - [PhoneGap配置](http://www.phonegapcn.com/developers/get-started-13/get-started)
 
+- [非常炫酷、牛逼的css](http://daneden.github.io/animate.css/?)
+
 # 步骤
 
 # 总结
