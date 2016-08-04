@@ -10,6 +10,8 @@
 
 Windows、Eclipse、PhoneGap
 
+[PhoneGap配置](http://www.phonegapcn.com/developers/get-started-13/get-started)
+
 # 步骤
 
 # 总结
