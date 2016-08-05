@@ -11,8 +11,13 @@
 </head>
 <body>
 <a href='#' class="button" >Example</a><br>
-<button class="margin" id="btn1" backgroundColor="yellow">Animate</button>
-
+<button class="btn1" id="btn1" backgroundColor="yellow">Animate</button>
+<select class='btn1' id='mySelect'>
+  <option value="bounce">bounce</option>
+  <option value="pulse">pulse</option>
+  <option value="flip">flip</option>
+  <option value="hinge">hinge</option>
+</select>
 <style>
 body{
 margin:50px;
@@ -27,18 +32,33 @@ display:inline-block;
 font-size:50px;
 border-radius:10px
 }
-#btn1{
+.btn1{
+margin: 2cm 4cm 3cm 4cm;
 padding:20px;
-font-size:50px;
+font-size:25px;
 border-radius:10px
 }
-button.margin {margin: 2cm 4cm 3cm 4cm}
 </style>
 
 <script>
 $(function(){
 var animate='animated hinge';
+
+
+
 $('#btn1').on('click',function(){
+var obj=document.getElementById('mySelect');  
+var index=obj.selectedIndex; //序号，取当前选中选项的序号  
+var val = obj.options[index].value;  
+    if(val=='bounce'){
+    animate='animated bounce';
+    }else if(val=='pulse'){
+    animate='animated pulse';
+    }else if(val=='flip'){
+    animate='animated flip';
+    }else if(val=='hinge'){
+    animate='animated hinge';
+    }
 $('a.button').addClass(animate).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
   $(this).removeClass(animate);
 });
