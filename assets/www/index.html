@@ -10,14 +10,16 @@
 
 </head>
 <body>
-<a href='#' class="button" >Example</a><br>
-<button class="btn1" id="btn1" backgroundColor="yellow">Animate</button>
+<p>
+<a href='#' class="button" >Example</a>
+</p>
 <select class='btn1' id='mySelect'>
   <option value="bounce">bounce</option>
   <option value="pulse">pulse</option>
   <option value="flip">flip</option>
   <option value="hinge">hinge</option>
 </select>
+<button class="btn1" id="btn1" backgroundColor="yellow">Animate</button>
 <style>
 body{
 margin:50px;
@@ -33,10 +35,17 @@ font-size:50px;
 border-radius:10px
 }
 .btn1{
-margin: 2cm 4cm 3cm 4cm;
-padding:20px;
-font-size:25px;
+position:relative;
+top:20px;
+padding:10px;
+font-size:18px;
 border-radius:10px
+}
+select.btn1{
+position:relative;
+right:12px;
+padding:10px;
+font-size:18px;
 }
 </style>
 
