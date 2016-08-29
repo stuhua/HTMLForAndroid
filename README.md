@@ -16,7 +16,7 @@ Windows、Eclipse、PhoneGap
 
 # 运行
 
-![效果](/img/show.png)
+![效果](/img/show.gif	)
 
 # 步骤
 
